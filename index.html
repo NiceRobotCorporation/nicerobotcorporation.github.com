@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html>
   <style>
-    a{text-decoration:none};
+    a{text-decoration:none;};
+    a.tw{animation:colorchange 11s;-webkit-animation:colorchange 11s;color:orange;}
+    a.fb{animation:colorchange 15s;-webkit-animation:colorchange 15s;color:blue;}
+    a.go{animation:colorchange 19s;-webkit-animation:colorchange 19s;color:red;}
+    body{margin:10%;font-family:monospace;}
+    @keyframes colorchange {
+      0%   {color: black;}
+      50%  {color: blue;}
+      75%  {color: green;}
+      100% {color: black;}
+    }
+    @-webkit-keyframes colorchange {
+      0%   {color: black;}
+      50%  {color: blue;}
+      75%  {color: green;}
+      100% {color: black;}
+    }
   </style>
 <body>
-  <a href="https://twitter.com/nicerobotco">#Nice</a>
-  <a href="https://www.facebook.com/nicerobotco">Robot</a>
-  <a href="https://www.google.com/+Nicerobotco">Corporation+</a>
+  <a class="tw" href="https://twitter.com/nicerobotco">#Nice</a>
+  <a class="fb" href="https://www.facebook.com/nicerobotco">Robot</a>
+  <a class="go" href="https://www.google.com/+Nicerobotco">Corporation+</a>
 </body></html>
 
