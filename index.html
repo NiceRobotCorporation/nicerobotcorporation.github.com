@@ -3,27 +3,28 @@
 <head>
   <style>
     a{text-decoration:none;color:black;}
-    a.tw{animation:colorchange 11s;-webkit-animation:colorchange 11s;}
-    a.go{animation:colorchange 15s;-webkit-animation:colorchange 15s;}
-    a.fb{animation:colorchange 19s;-webkit-animation:colorchange 19s;}
-    body{margin:10%;font-family:monospace;}
+    a.tw{animation:colorchange 7.0s infinite;-webkit-animation:colorchange 7.0s infinite;}
+    a.fb{animation:colorchange 8.0s infinite;-webkit-animation:colorchange 8.0s infinite;}
+    a.go{animation:colorchange 9.0s infinite;-webkit-animation:colorchange 9.0s infinite;}
+    body{margin:10%;font-family:monospace;color:black;}
     @keyframes colorchange {
-      0%   {color: black;}
-      50%  {color: blue;}
-      75%  {color: green;}
-      100% {color: black;}
+      0%   {color:transparent;text-shadow: 0 0 1px rgba(0,0,0,1.0);}
+      50%  {color:transparent;text-shadow: 0 0 0px rgba(0,0,0,0.5);}
+      100% {color:transparent;text-shadow: 0 0 1px rgba(0,0,0,1.0);}
     }
     @-webkit-keyframes colorchange {
-      0%   {color: black;}
-      50%  {color: blue;}
-      75%  {color: green;}
-      100% {color: black;}
+      0%   {color:transparent;text-shadow: 0 0 1px rgba(0,0,0,1.0);}
+      50%  {color:transparent;text-shadow: 0 0 0px rgba(0,0,0,0.5);}
+      100% {color:transparent;text-shadow: 0 0 1px rgba(0,0,0,1.0);}
     }
+    a.tooltip {outline:none;}
+    a.tooltip:hover {text-decoration:none;}
+    a.tooltip span {z-index:10;display:none;}
+    a.tooltip:hover span{display:inline;position:absolute;margin-top:2em;}
   </style>
 </head>
 <body>
-  <a class="tw" href="https://twitter.com/nicerobotco">#Nice</a>
-  <a class="fb" href="https://www.facebook.com/nicerobotco">Robot</a>
-  <a class="go" href="https://www.google.com/+Nicerobotco">Corporation+</a>
+  <a class="tw tooltip" href="https://twitter.com/nicerobotco">#Nice <span>#nicerobotco</span></a>
+  <a class="fb tooltip" href="https://www.facebook.com/nicerobotco">Robot <span>nicerobotco</span></a>
+  <a class="go tooltip" href="https://www.google.com/+Nicerobotco">Corporation+ <span>+nicerobotco</span></a>
 </body></html>
-
